@@ -1,16 +1,14 @@
 import React from 'react'
+import { generateBlockClass } from '@vtex/css-handles'
+import styles from './styles.css'
 
-const ButtonGroup = () => {
+const ButtonGroup = ({ blockClass }: { blockClass: string }) => {
+  const footerButtonContainer = generateBlockClass(styles.container__footer__btn__container, blockClass)
   return (
-    <>
-      <div>
-        <a href="/">Checkout</a>
-      </div>
-      <div>
-        <button>Continue shopping</button>
-        <a href="/">See cart</a>
-      </div>
-    </>
+    <div className={footerButtonContainer}>
+      <a href='/'>CONTINUAR COMPRANDO</a>
+      <a href="/">VER CARRITO</a>
+    </div>
   )
 }
 
