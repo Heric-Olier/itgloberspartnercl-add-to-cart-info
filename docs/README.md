@@ -42,6 +42,9 @@ The Add to Cart Info Component is a block that shows the products that were adde
   }
   
    ```
+Block name     | Description                                      |
+| -------------- | ----------------------------------------------- |
+| `add-to-cart-info` | ![https://img.shields.io/badge/-Mandatory-red](https://img.shields.io/badge/-Mandatory-red)  This is the top-level block that must be declared in a `store-theme` block to render the bullets by default.   |
 
 ## Customization
 
